@@ -63,17 +63,26 @@
                             <td class="empty-line">&nbsp;</td>
                         </tr>
                     </table>
+                    {% comment %}
                     <table class="row actions">
                         <tr>
                             <td class="empty-line">&nbsp;</td>
                         </tr>
                         <tr>
                             <td class="actions__cell">
-                                <table class="button main-action-cell">
+                                <table class="button main-action-cell" style="width: 100%;">
                                     <tr>
                                         <td class="button__cell" style="background-color: #ede6e0; border-radius: 30px;"><a href="{{ gift_card.url }}" class="button__text" style="color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">View gift card</a></td>
                                     </tr>
                                 </table>
+                            </td>
+                        </tr>
+                    </table>
+                    {% endcomment %}
+                    <table class="row actions">
+                        <tr>
+                            <td style="text-align: center;" align="center">
+                                <a href="{{ gift_card.url }}" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px; width: 270px;">View gift card</a>
                             </td>
                         </tr>
                     </table>
@@ -124,7 +133,7 @@
                                         <td class="empty-line">&nbsp;</td>
                                     </tr>
                                 </table>
-                                <a href="{{ shop.url }}/collections/all" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">Jetzt entdecken</a>
+                                <a href="{{ shop.url }}/collections/all" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px; width: 270px;">Jetzt entdecken</a>
                             </td>
                         </tr>
                     </table>
@@ -168,7 +177,7 @@
                             <td class="empty-line">&nbsp;</td>
                         </tr>
                     </table>
-                    
+
                     <table class="row actions" style="background-color: #f8f4f1;">
                         <tr>
                             <td style="text-align: center; padding-top: 15px; padding-bottom: 15px;">
