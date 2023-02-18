@@ -1,5 +1,5 @@
 {% capture email_title %}
-  Your gift card
+    Your gift card
 {% endcapture %}
 {% capture email_body %}
   {% if gift_card.expires_on %}
@@ -12,27 +12,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>{{ email_title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/assets/notifications/styles.css">
-    <style>
-      .button__cell {
-        background: {{ shop.email_accent_color }}
-        ;
-      }
-      a,
-      a:hover,
-      a:active,
-      a:visited {
-        color: {{ shop.email_accent_color }}
-        ;
-      }
-    </style>
-  </head>
+  <title>{{ email_title }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+  <style>
+    .button__cell { background: {{ shop.email_accent_color }}; }
+    a, a:hover, a:active, a:visited { color: {{ shop.email_accent_color }}; }
+  </style>
+</head>
 
   <body>
     <table class="body">
@@ -45,68 +33,176 @@
       <tr>
         <td>
           <table class="row content">
+  <tr>
+    <td class="content__cell">
+      <center>
+        <table class="container">
             <tr>
-              <td class="content__cell">
-                <center>
-                  <table class="container">
-                    <tr>
-                      <td>
-
-                        <h1>{{ email_title }}</h1>
-                        <table class="row actions">
-                          <tr>
-                            <td class="empty-line">&nbsp;</td>
-                          </tr>
-                        </table>
-
-                        <img
-                          src="{{ 'gift-card/card.jpg' | shopify_asset_url }}"
-                          alt="Gift card image"
-                          width="240"
-                          height="160">
-                        <table class="row actions">
-                          <tr>
-                            <td class="empty-line">&nbsp;</td>
-                          </tr>
-                        </table>
-
-                        <p>{{ email_body }}</p>
-
-                        <table class="row actions">
-                          <tr>
-                            <td class="empty-line">&nbsp;</td>
-                          </tr>
-                          <tr>
-                            <td class="actions__cell">
-                              <table class="button main-action-cell">
-                                <tr>
-                                  <td class="button__cell">
-                                    <a href="{{ gift_card.url }}" class="button__text">View gift card</a>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                        <br/>
-
-                        {% if gift_card.pass_url %}
-                          <a href="{{ gift_card.pass_url }}" class="apple-wallet-button">
-                            <img
-                              src="{{ 'gift-card/add-to-apple-wallet.png' | shopify_asset_url }}"
-                              alt="Add to Apple Wallet"
-                              width="120"
-                              height="40">
-                          </a>
-                        {% endif %}
-
-                      </td>
-                    </tr>
-                  </table>
-                </center>
-              </td>
+                <td style="text-align: center;" align="center">
+                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Lyocello_logo.png?v=1676729494" alt="lyocello_logo" width="180" style="width: 180px;">
+                </td>
             </tr>
-          </table>
+            <tr>
+                <td>
+                    <table class="row actions">
+                        <tr>
+                            <td>
+                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/gift_card.png?v=1676729497" alt="lyocello_gift_card" width="540" style="width: 100%">
+                            </td>
+                        </tr>
+                    </table>
+
+                    {% comment %}
+                        <img src="{{ 'gift-card/card.jpg' | shopify_asset_url }}" alt="Gift card image" width="240" height="160">
+                    {% endcomment %}
+
+                    <p style="color: #000; font-size: 18px; text-align: center;">{{ email_body }}</p>
+                    
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="actions__cell">
+                                <table class="button main-action-cell">
+                                    <tr>
+                                        <td class="button__cell" style="background-color: #ede6e0; border-radius: 30px;"><a href="{{ gift_card.url }}" class="button__text" style="color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">View gift card</a></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+
+                    {% if gift_card.pass_url %}
+                    <a href="{{ gift_card.pass_url }}" class="apple-wallet-button">
+                        <img src="{{ 'gift-card/add-to-apple-wallet.png' | shopify_asset_url }}" alt="Add to Apple Wallet" width="120" height="40">
+                    </a>
+                    {% endif %}
+
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td>
+                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/banner_1.jpg?v=1676729495" alt="lyocello_banner_1" width="540" style="width: 100%">
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td style="text-align: center;" align="center">
+                                <h1 style="font-weight: normal; color: #000; text-align: center;">Schläfst du bereits mit unserem Spannbettlaken?</h1>
+                                <table class="row actions">
+                                    <tr>
+                                        <td class="empty-line">&nbsp;</td>
+                                    </tr>
+                                </table>
+                                <a href="{{ shop.url }}/collections/all" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">Jetzt entdecken</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td>
+                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/banner_2.jpg?v=1676729502" alt="lyocello_banner_2" width="540" style="width: 100%">
+                            </td>
+                        </tr>
+                    </table>
+
+
+
+                    <table class="row actions">
+                        <tr>
+                            <td style="text-align: left;" align="left">
+                                <h1 style="font-weight: normal; color: #000; padding-bottom: 12px; text-align: left;">Nachhaltig aus Eukalyptus</h1>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-top: 1px solid #000; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.02_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Made in Europe.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.57.17_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: middle;"> Spart bis zu 40-Mal mehr Wasser als Baumwolle.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.31_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Keine Pestizide oder Genveränderung.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.39_PM-removebg-preview.png?v=1676732309" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Nachhaltig aus FSC-zertifiziertem Holz.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.48_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> 100% Biologisch abbaubar.</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="row actions">
+                        <tr>
+                            <td class="empty-line">&nbsp;</td>
+                        </tr>
+                    </table>
+                    
+                    <table class="row actions" style="background-color: #f8f4f1;">
+                        <tr>
+                            <td style="text-align: center; padding-top: 15px; padding-bottom: 15px;">
+                                <p>Lyocello, Baerwaldstraße 46, 10961 Berlin</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <hr>
+
+                    <table class="row actions">
+                        <tr>
+                            <td style="text-align: center;">
+                                <a href="https://www.instagram.com/ohlyocello/" style="vertical-align: middle;">
+                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/insta-grey.png?v=1676734803" alt="insta" style="padding-right: 18px; width: 36px" width="36">
+                                </a>
+                                <a href="https://www.facebook.com/OhLyocello/" style="vertical-align: middle;">
+                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/facebook-grey.png?v=1676734802" alt="facebook" style="padding-right: 18px; width: 12px" width="12">
+                                </a>
+                                <a href="https://www.pinterest.com/OhLyocello" style="vertical-align: middle;">
+                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/pinterest-grey.png?v=1676734803" alt="pinterest" style="width: 27px" width="27">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+          {% comment %}
           <table class="row footer">
             <tr>
               <td class="footer__cell">
@@ -114,10 +210,8 @@
                   <table class="container">
                     <tr>
                       <td>
-
-                        <p class="disclaimer__subtext">If you have any questions, reply to this email or contact us at
-                          <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>
-                        </p>
+                        
+                        <p class="disclaimer__subtext">If you have any questions, reply to this email or contact us at <a href="mailto:{{ shop.email }}">{{ shop.email }}</a></p>
                       </td>
                     </tr>
                   </table>
@@ -125,12 +219,8 @@
               </td>
             </tr>
           </table>
-
-          <img
-            src="{{ 'notifications/spacer.png' | shopify_asset_url }}"
-            class="spacer"
-            height="1" />
-
+          <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
+          {% endcomment %}
         </td>
       </tr>
     </table>
