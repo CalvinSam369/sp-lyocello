@@ -1,11 +1,11 @@
 {% capture email_title %}
-    Your gift card
+    Dein Geschenkgutschein
 {% endcapture %}
 {% capture email_body %}
   {% if gift_card.expires_on %}
-    Your {{ gift_card.balance | money_without_trailing_zeros }} gift card for {{ shop.name }} is active. Keep this email or write down your gift card number. This gift card expires on {{ gift_card.expires_on }}.
+    Dein Geschenkgutschein im Wert von {{ gift_card.balance | money_without_trailing_zeros }} für {{ shop.name }} ist aktiv. Bewahre diese E-Mail auf oder notiere dir deine Geschenkgutscheinnummer. Dieser Geschenkgutschein ist gültig bis {{ gift_card.expires_on }}.
   {% else %}
-    Your {{ gift_card.balance | money_without_trailing_zeros }} gift card for {{ shop.name }} is active. Keep this email or write down your gift card number.
+    Dein Geschenkgutschein im Wert von {{ gift_card.balance | money_without_trailing_zeros }} für {{ shop.name }} ist aktiv. Bewahre diese E-Mail auf oder notiere dir deine Geschenkgutscheinnummer.
   {% endif %}
 {% endcapture %}
 
@@ -39,7 +39,7 @@
         <table class="container">
             <tr>
                 <td style="text-align: center;" align="center">
-                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Lyocello_logo.png?v=1676729494" alt="lyocello_logo" width="180" style="width: 180px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/Lyocello_logo_d508bcef-ce47-4124-a2ad-b75765bf4174.png?v=1677030300" alt="lyocello_logo" width="180" style="width: 180px;">
                 </td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@
                     <table class="row actions">
                         <tr>
                             <td style="background: #d8c4b4;">
-                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/gift_card.png?v=1676729497" alt="lyocello_gift_card" width="540" style="width: 100%">
+                                <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/gift_card.png?v=1677030301" alt="lyocello_gift_card" width="540" style="width: 100%">
                             </td>
                         </tr>
                     </table>
@@ -92,7 +92,7 @@
                             <td class="actions__cell">
                                 <table class="button main-action-cell" style="width: 100%;">
                                     <tr>
-                                        <td class="button__cell" style="background-color: #ede6e0; border-radius: 30px;"><a href="{{ gift_card.url }}" class="button__text" style="color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">View gift card</a></td>
+                                        <td class="button__cell" style="background-color: #ede6e0; border-radius: 30px;"><a href="{{ gift_card.url }}" class="button__text" style="color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px;">Geschenkgutschein anzeigen</a></td>
                                     </tr>
                                 </table>
                             </td>
@@ -102,7 +102,7 @@
                     <table class="row actions">
                         <tr>
                             <td style="text-align: center;" align="center">
-                                <a href="{{ gift_card.url }}" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px; width: 270px;">View gift card</a>
+                                <a href="{{ gift_card.url }}" style="display: block; background-color: #ede6e0; border-radius: 30px; color: #000; padding-top: 18px; padding-bottom: 18px; font-size: 21px; width: 270px; padding-left: 21px; padding-right: 21px;">Geschenkgutschein anzeigen</a>
                             </td>
                         </tr>
                     </table>
@@ -128,7 +128,7 @@
                     <table class="row actions">
                         <tr>
                             <td>
-                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/banner_1.jpg?v=1676729495" alt="lyocello_banner_1" width="540" style="width: 100%">
+                                <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/banner_1.jpg?v=1677030300" alt="lyocello_banner_1" width="540" style="width: 100%">
                             </td>
                         </tr>
                     </table>
@@ -171,7 +171,7 @@
                     <table class="row actions">
                         <tr>
                             <td>
-                                <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/banner_2.jpg?v=1676729502" alt="lyocello_banner_2" width="540" style="width: 100%">
+                                <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/banner_2.jpg?v=1677030304" alt="lyocello_banner_2" width="540" style="width: 100%">
                             </td>
                         </tr>
                     </table>
@@ -182,11 +182,11 @@
                         <tr>
                             <td style="text-align: left;" align="left">
                                 <h1 style="font-weight: normal; color: #000; padding-bottom: 12px; text-align: left;">Nachhaltig & kuschelig aus Holz</h1>
-                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-top: 1px solid #000; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.02_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Made in Europe.</p>
-                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.57.17_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: middle;"> Spart bis zu 40-Mal mehr Wasser als Baumwolle.</p>
-                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.31_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Keine Pestizide oder Genveränderung.</p>
-                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.39_PM-removebg-preview.png?v=1676732309" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Nachhaltig aus FSC-zertifiziertem Holz.</p>
-                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/Screenshot_2023-02-18_at_10.54.48_PM-removebg-preview.png?v=1676732310" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> 100% Biologisch abbaubar.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-top: 1px solid #000; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/icon_1.png?v=1677030300" alt="lyocello_icon_1" width="30px" style="width: 30px; padding-right: 3px; vertical-align: bottom;"> Made in Europe.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/icon_2.png?v=1677030300" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: middle;"> Spart bis zu 40-Mal mehr Wasser als Baumwolle.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/icon_3.png?v=1677030300" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Keine Pestizide oder Genveränderung.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/icon_4.png?v=1677030300" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> Nachhaltig aus FSC-zertifiziertem Holz.</p>
+                                <p style="color: #000; font-size: 18px; margin-top: 0; padding-top: 6px; padding-bottom: 6px; text-align: left; border-bottom: 1px solid #000;"><img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/icon_5.png?v=1677030300" alt="lyocello_icon_1" width="30px" style="width: 30px; vertical-align: bottom;"> 100% Biologisch abbaubar.</p>
                             </td>
                         </tr>
                     </table>
@@ -211,13 +211,13 @@
                         <tr>
                             <td style="text-align: center;">
                                 <a href="https://www.instagram.com/ohlyocello/" style="vertical-align: middle;">
-                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/insta-grey.png?v=1676734803" alt="insta" style="padding-right: 18px; width: 36px" width="36">
+                                    <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/insta-grey.png?v=1677030514" alt="insta" style="padding-right: 18px; width: 36px" width="36">
                                 </a>
                                 <a href="https://www.facebook.com/OhLyocello/" style="vertical-align: middle;">
-                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/facebook-grey.png?v=1676734802" alt="facebook" style="padding-right: 18px; width: 12px" width="12">
+                                    <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/facebook-grey.png?v=1677030514" alt="facebook" style="padding-right: 18px; width: 12px" width="12">
                                 </a>
                                 <a href="https://www.pinterest.com/OhLyocello" style="vertical-align: middle;">
-                                    <img src="https://cdn.shopify.com/s/files/1/0696/3101/7227/files/pinterest-grey.png?v=1676734803" alt="pinterest" style="width: 27px" width="27">
+                                    <img src="https://cdn.shopify.com/s/files/1/0511/7899/5902/files/pinterest-grey.png?v=1677030514" alt="pinterest" style="width: 27px" width="27">
                                 </a>
                             </td>
                         </tr>
